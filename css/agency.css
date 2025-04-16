@@ -181,6 +181,73 @@ fieldset[disabled] .btn-xl.active {
     background-color: #fff;
 }
 
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    color: #4f518c;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #FBEFE1;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+ color: #4f518c;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: #4f518c;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+ color: #4f518c;
+}
+
+.navbar-custom a {
+    color: #4f518c;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: RGBA(79, 81, 140, 1);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+color: RGBA(79, 81, 140, 1);
+    background-color: f2ebfb;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+ 	color: #4f518c;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #dabfff;
+}
+
+
 .navbar-default {
     border-color: transparent;
     background-color: #e44646;

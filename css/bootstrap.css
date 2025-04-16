@@ -4103,7 +4103,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top .navbar-collapse,
 .navbar-fixed-bottom .navbar-collapse {
   max-height: 340px;
-  background-color: #001aff;
 }
 @media (max-device-width: 480px) and (orientation: landscape) {
   .navbar-fixed-top .navbar-collapse,
@@ -4142,7 +4141,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   right: 0;
   left: 0;
   z-index: 1030;
-  background-color: #001aff;
 }
 @media (min-width: 768px) {
   .navbar-fixed-top,
@@ -4153,7 +4151,6 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-fixed-top {
   top: 0;
   border-width: 0 0 1px;
-  background-color: #001aff;
 }
 .navbar-fixed-bottom {
   bottom: 0;
