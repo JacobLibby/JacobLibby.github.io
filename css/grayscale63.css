@@ -111,6 +111,9 @@ a:focus {
     color: RGBA(79, 81, 140, 1);
     background-color: transparent;
 }
+a.big {
+    font-size: 300%;
+}
 
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
@@ -130,6 +133,24 @@ color: RGBA(79, 81, 140, 1);
 
 .navbar-custom .nav li.active a:hover {
     color: #dabfff;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #FBEFE1;
+    }
 }
 
 .intro {
