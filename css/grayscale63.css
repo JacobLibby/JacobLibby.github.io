@@ -3,7 +3,15 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LFBEFE1ICENSE-2.0.
  */
-
+.container{
+    --header-text-color: #1E1E24;
+    --paragraph-text-color: #444140;
+    --a-text-color: rgb(209, 57, 57);
+    --navbar-text-color:rgb(217, 255, 0);
+    --navbar-active-text-color:rgb(255, 255, 255);
+    --p-text-color:#444140;
+    --color1:#88B7B5;
+}
 body {
     width: 100%;
     height: 100%;
@@ -29,14 +37,14 @@ h6 {
     margin: 0 0 35px;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
-    color: #4f518c;
+    color: var(--header-text-color);
     letter-spacing: 1px;
 }
 
 p {
     margin: 0 0 25px;
     font-size: 18px;
-    color: #4f518c;
+    color: var(--paragraph-text-color);
     line-height: 1.5;
 }
 
@@ -44,13 +52,13 @@ p {
     p {
         margin: 0 0 35px;
         font-size: 20px;
-         color: #4f518c;
+         color: var(--p-text-color);
         line-height: 1.6;
     }
 }
 
 a {
-    color: #4f518c;
+    color: var(--a-text-color);
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -70,7 +78,7 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    color: #4f518c;
+    color: var(navbar-text-color);
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     background-color: #FBEFE1;
 }
@@ -81,23 +89,23 @@ a:focus {
 
 .navbar-custom .navbar-brand:focus {
     outline: 0;
- color: #4f518c;
+ color: var(navbar-text-color);
 }
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #4f518c;
+    color: var(navbar-text-color);
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
 .navbar-custom .navbar-brand .navbar-toggle:active {
     outline: 0;
- color: #4f518c;
+ color: var(navbar-text-color);
 }
 
 .navbar-custom a {
-    color: #4f518c;
+    color: var(navbar-text-color);
 }
 
 .navbar-custom .nav li a {
@@ -128,7 +136,7 @@ color: RGBA(79, 81, 140, 1);
 }
 
 .navbar-custom .nav li.active a {
-    background-color: rgba(255,255,255,.3);
+    background-color: var(--navbar-active-text-color)
 }
 
 .navbar-custom .nav li.active a:hover {
@@ -160,7 +168,7 @@ color: RGBA(79, 81, 140, 1);
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg-2.png) no-repeat bottom center scroll;
+    background: url(../img/background-7032003_1920.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
