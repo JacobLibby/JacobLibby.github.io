@@ -6,10 +6,10 @@
 .container{
     --header-text-color: #1E1E24;
     --paragraph-text-color: #444140;
-    --a-text-color: rgb(209, 57, 57);
+    --a-text-color: #D13939;
     --navbar-text-color:rgb(217, 255, 0);
     --navbar-active-text-color:rgb(255, 255, 255);
-    --p-text-color:#444140;
+    --p-text-color:#C1B4AE;
     --color1:#88B7B5;
 }
 body {
@@ -168,7 +168,8 @@ color: RGBA(79, 81, 140, 1);
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/background-7032003_1920.jpg) no-repeat bottom center scroll;
+    background: url(../img/infinitycube_tall.png) no-repeat bottom center scroll;
+    /* background: url(../img/background-7032003_1920.jpg) no-repeat bottom center scroll; */
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -245,7 +246,7 @@ color: RGBA(79, 81, 140, 1);
 }
 
 @-webkit-keyframes pulse {    
-    0 {
+    0% {
         -webkit-transform: scale(1);
         transform: scale(1);
     }
