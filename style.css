@@ -37,9 +37,9 @@
     overflow: auto;
     /* width: 45%; */
     /* margin: auto; */
-    margin-left: 1%;
+    margin-left: 0.9%;
 /* margin-left: 28%; */
-    height: 47vh;
+    height: 48vh;
     
 }
 #content_inner {  
@@ -120,7 +120,16 @@
     cursor: grab;
 }
 
-
+.butt{
+  margin-top: 8.1vh; 
+  margin-right: 0px; 
+  position: absolute;
+  cursor: pointer;
+  width: 2vw;
+  height: 1.6vh;
+  background-color: transparent;
+  border-width: 0;
+}
 
 .tv {
 	background: transparent;
