@@ -49,10 +49,11 @@ margin-left: 28%;
 
 .flex-container {
   display: flex;
-  /* flex-wrap: nowrap; */
+  flex-wrap:wrap;
   /* background-color: rgb(125, 185, 209); */
   justify-content:center;
   align-items: center;
+  max-width: 48vw;
 }
 
 .flex-container > div {
@@ -60,8 +61,8 @@ margin-left: 28%;
   margin-top: 0px;
   margin-left: 10px;
   margin-right: 10px;
+  margin-bottom: 0px;
   text-align: center;
-  line-height: 75px;
   font-size: 30px;
   
 }
