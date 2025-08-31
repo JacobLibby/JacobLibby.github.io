@@ -7,7 +7,7 @@
     background-size: cover;
     position: relative;
 }
-#content2 {
+#content3 {
     overflow: auto; /*this gives us our scroll bar when the content is longer than the div*/
     height: 500px;
     width: 500px;
@@ -31,13 +31,14 @@
 
     /* height: 50%; */
 }
-#content {
+#content2 {
     color:#FFFFF0;
     font-family: 'Courier New', Courier, monospace;
     overflow: auto;
-    width: 45%;
+    /* width: 45%; */
     /* margin: auto; */
-margin-left: 28%;
+    margin-left: 1%;
+/* margin-left: 28%; */
     height: 47vh;
     
 }
@@ -118,3 +119,351 @@ margin-left: 28%;
 .high-five {
     cursor: grab;
 }
+
+
+
+.tv {
+	background: transparent;
+	width: 47vw;
+	height: 52.9vh;
+  margin: auto;
+  margin-top: 1.6vh;
+	/* border: 2.5vw solid #000;
+	border-radius: 0.25vw;
+	border-color: #000 #101010 #000 #101010; */
+	position: relative;
+	/* bottom: 2vh; */
+	/* box-shadow: 0 0 5px 0 #000 inset, 5vmin 0vmin 5vmin -3vmin #000,-5vmin 0vmin 5vmin -3vmin #000; */
+}
+/* 
+.tv:before {
+	content: "";
+	width: 8vw;
+	height: 6vw;
+	background: #000000;
+	position: absolute;
+	bottom: -5.95vw;
+	left: calc(50% - 2.75vw);
+	border-radius: 0 100%;
+	transform: rotate(-42deg);
+}
+
+.tv:after {
+	content: "";
+	width: 8vw;
+	height: 6vw;
+	background: #000000;
+	position: absolute;
+	bottom: -5.95vw;
+	left: calc(50% - 5.5vw);
+	border-radius: 100% 0;
+	transform: rotate(42deg);
+} */
+
+.video {
+	position: relative;
+	/* padding-bottom: 56.25%; */
+	/* height: 55vh; */
+  height:100%;
+	overflow: hidden;
+}
+
+.video video {
+	position: absolute;
+	top: 0;
+	left: -45%;
+	width: 240%;
+	height: 100%;
+}
+
+.switchinput {
+	/* width: 3vmax;
+	height: 3vmax;
+	border: 0;
+	position: absolute;
+	z-index: 6;
+	bottom: -4vmax;
+	left: calc(50% - 1.85vmax);
+	opacity: 0;
+	cursor: pointer; */
+  	width: 2.5vw;
+	height: 4vh;
+	border:#000000;
+  outline: 10px;
+  outline-width: 10px;
+  border-width: 10px;
+	position: absolute;
+	z-index: 6;
+	bottom: -11.1vh;
+	right: 5.4vw;
+	opacity: 0;
+	cursor: pointer;
+}
+
+.switch {
+	background: #1b1b1b;
+	width: 3vmax;
+	height: 3vmax;
+	position: absolute;
+	left: calc(50% - 1.5vmax);
+	bottom: -3.95vmax;
+	border: 0.25vmax solid #4e4e4e;
+	z-index: 5;
+	border-radius: 100%;
+	box-shadow: 0 0 1vmax 0px #272727, 0 0 0.5vmax 0.1vmax #000 inset;
+	box-sizing: border-box;
+}
+
+input:checked + .switch {
+	background: linear-gradient(to bottom, #151515, #3c3c3c);
+	color: #fff;
+	box-shadow: 0 0 1vmax 0 #03a9f480, 0 0 0.15vmax 1px #03a9f46e inset,
+		0 0 0.25vmax 0.15vmax #000000 inset;
+	border-color: #2196f3;
+}
+
+.switch::before {
+	content: "";
+	position: absolute;
+	width: 1vmax;
+	height: 1vmax;
+	bottom: 0.5vmax;
+	border: 0.25vmax solid #4e4e4e;
+	border-top-color: transparent;
+	border-radius: 100%;
+	left: 0.5vmax;
+}
+
+input:checked + .switch:before {
+	border-color: transparent #03a9f4 #03a9f4 #03a9f4;
+}
+
+.switch::after {
+	content: "";
+	position: absolute;
+	width: 0.15vmax;
+	height: 0.65vmax;
+	bottom: 1.35vmax;
+	left: 1.2vmax;
+	background: #4e4e4e;
+}
+
+input:checked + .switch:after {
+	background: #03a9f4;
+}
+
+.cover {
+pointer-events: none;
+
+	position: absolute;
+	background: radial-gradient(transparent, transparent, #00000080);
+	width: 100%;
+	height: 100%;
+	top: 0;
+	overflow: hidden;
+	box-shadow: 0 0 1vmin 0 #000 inset;
+}
+
+.cover:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	border: 19.65vw solid #0a0a0a;
+	border-left-width: 35.1vw;
+	border-right-width: 35.1vw;
+	animation: turn-off 0.15s ease 0s 1, turned-off 1s ease 0.15s infinite,
+		white-dot 0.35s ease 0.15s 1;
+}
+
+.cover:after {
+	content: "";
+	background: linear-gradient(
+		45deg,
+		#ffffff00 15%,
+		#ffffff0d 35%,
+		#ffffff00,
+		#ffffff05,
+		#ffffff20
+	);
+	position: absolute;
+	/* top: 0; */
+	width: 100%;
+	height: 100%;
+
+}
+.cover-unclickable {
+	pointer-events: all;
+
+}
+
+input:checked ~ .cover:before {
+	animation: turn-on 0.15s ease 0s 1, turned-on 1s ease 0.15s infinite;
+
+}
+
+@keyframes turn-on {
+	0% {
+    background-color: white;
+		border-width: 30vh;
+		border-left-width: 10vw;
+		border-right-width: 10vw;
+	}
+ 
+50% {
+    background-color: white;
+		border-width: 30vh;
+		border-left-width: 5vw;
+		border-right-width: 5vw;
+	}
+
+	75% {
+    background-color: white;
+		border-width: 10vh;
+		border-left-width: 0vw;
+		border-right-width: 00vw;
+    /* ^^ how much do we squish the rightside inward? */
+	}
+
+	100% {
+		border-width: 0vh;
+		border-left-width: 0vw;
+		border-right-width: 0vw;
+	}
+}
+@keyframes turned-on {
+	0% {
+		border-width: 0;
+	}
+	100% {
+		border-width: 0;
+	}
+}
+
+@keyframes turn-off {
+	0% {
+    background-color: white;
+		border-width: 10vh;
+		border-left-width: 0vw;
+		border-right-width: 0vw;
+	}
+
+  25% {
+    background-color: white;
+		border-width: 20vh;
+		border-left-width: 2vw;
+		border-right-width: 2vw;
+  }
+
+	50% {
+    background-color: white;
+		border-width: 30vh;
+		border-left-width: 2vw;
+		border-right-width: 2vw;
+	}
+	
+	100% {
+		border-width: 50vh;
+		border-left-width: 10vw;
+		border-right-width: 10vw;
+	}
+}
+@keyframes turned-off {
+	0% {
+		border-width: 19.65vw;
+		border-left-width: 35.1vw;
+		border-right-width: 35.1vw;
+		background: #111111;
+	}
+	100% {
+		border-width: 19.65vw;
+		border-left-width: 35.1vw;
+		border-right-width: 35.1vw;
+		background: #111111;
+	}
+	
+
+}
+@keyframes white-dot {
+	0% {
+		background: #ffffff80;
+	}
+	100% {
+		background: #111111;
+	}
+}
+
+/* 
+
+@keyframes turn-on {
+	0% {
+    background-color: white;
+		border-width: 2.65vw;
+		border-left-width: 35.1vw;
+		border-right-width: 35.1vw;
+	}
+ 
+20% {
+    background-color: white;
+		border-width: 72.65vw;
+		border-left-width: 35.1vw;
+		border-right-width: 35.1vw;
+	}
+
+	50% {
+    background-color: white;
+		border-width: 19.65vw;
+		border-left-width: 10vw;
+		border-right-width: 10vw;
+	}
+
+	100% {
+		border-width: 0vh;
+		border-left-width: 0vw;
+		border-right-width: 0vw;
+	}
+}
+@keyframes turned-on {
+	0% {
+		border-width: 0;
+	}
+	100% {
+		border-width: 0;
+	}
+}
+
+@keyframes turn-off {
+	0% {
+    background-color: white;
+		border-width: 0vw;
+		border-left-width: 0vw;
+		border-right-width: 0vw;
+	}
+	50% {
+    background-color: white;
+		border-width: 20vw;
+		border-left-width: 5vw;
+		border-right-width: 5vw;
+	}
+	
+	100% {
+		border-width: 50vw;
+		border-left-width: 1vw;
+		border-right-width: 1vw;
+	}
+}
+@keyframes turned-off {
+	0% {
+		border-width: 19.65vw;
+		border-left-width: 35.1vw;
+		border-right-width: 35.1vw;
+		background: #111111;
+	}
+	100% {
+		border-width: 19.65vw;
+		border-left-width: 35.1vw;
+		border-right-width: 35.1vw;
+		background: #111111;
+	}
+	 */

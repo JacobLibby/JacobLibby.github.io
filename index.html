@@ -11,91 +11,117 @@
 </head>
 <script src="index.js"></script>
 
-<body style="height: 100%; overflow: hidden; margin: 0px;">
+<body style="height: 100%; overflow: hidden; margin: 0px;" id="content">
   <div id="example1">
-    <div style="height: 10%;"></div>
+    <div style="height: 8.2%;"></div>
     <div>
-      <div id="content_outer">
-        <div>
-          <div class="flex-container" id="flex_id">
+      <div>
+        <div class="tv">
+          <input type="checkbox" class="switchinput" checked>
+          <!-- <div class="switch"></div> -->
+          <div class="video">
+            <!-- <div id="content_outer"> -->
+            <div id="content_outer">
+              <div class="flex-container" id="flex_id">
 
-            <!-- <button class="button-54" role="button">Button 54</button> -->
-            <div><button class="button-54" role="button">HOME</button></div>
-            <div><button class="button-54" role="button">ABOUT ME</button></div>
-            <div><button class="button-54" role="button">RESUME</button></div>
-            <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
-            <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
+                <!-- <button class="button-54" role="button">Button 54</button> -->
+                <div><button class="button-54" role="button">HOME</button></div>
+                <div><button class="button-54" role="button">ABOUT ME</button></div>
+                <div><button class="button-54" role="button">RESUME</button></div>
+                <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
+                <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
+              </div>
+              <!-- </div> -->
+              <div id="content2" id="myDiv" onscroll="myFunction()">
+                <div style="height: 46vh">
+
+                  <!-- <p id="demo"> -->
+                  <!-- </p> -->
+                  <h1>Jacob Libby's Website</h1>
+                  <h2>WELCOME!</h2>
+
+                  <p>My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis,
+                    Minnesota.
+                    I felt that the standard website is a bit too boring and modern these days, so here's my take on a
+                    website
+                    that's more efficient and fun to interact with.</p>
+
+
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <h2>ABOUT ME</h2>
+                  <p>Here is a whole paragraph talking about me</p>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+                  <br>
+
+
+
+
+
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div id="content" id="myDiv" onscroll="myFunction()">
-          <div>
-
-            <!-- <p id="demo"> -->
-            <!-- </p> -->
-            <h1>Jacob Libby's Website</h1>
-            <h2>WELCOME!</h2>
-
-            <p>My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis, Minnesota.
-              I felt that the standard website is a bit too boring and modern these days, so here's my take on a website
-              that's more efficient and fun to interact with.</p>
-
-
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>ABOUT ME</h2>
-            <p>Here is a whole paragraph talking about me</p>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-
-
-
-
+          <div style="align-items: center; margin-left: 17.8vw;">
+            <input class="butt" type="button"
+              style="position: absolute; margin-top: 8vh; margin-left: 0vw; margin-right: 0px; width: 2.5vw; height: 2vh; background-color: transparent;" />
+            <input class="butt" type="button"
+              style="position: absolute; align-self: center; margin-top: 8vh; margin-left: 2.94vw; margin-right: 0px; width: 2.5vw; height: 2vh; background-color: transparent;" />
+            <input class="butt" type="button"
+              style="position: absolute; align-self: center; margin-top: 8vh; margin-left: 5.6vw; width: 2.5vw; height: 2vh; background-color: transparent;" />
+            <input class="butt" type="button"
+              style="position: absolute; align-self: center; margin-top: 8vh; margin-left: 8.6vw; width: 2.5vw; height: 2vh; background-color: transparent;" />
+            <!-- <checkbox id="switcher-tv" class="switchinput"
+              style="align-self: center; margin-top: 6vh; margin-left: 9.6vw; width: 2.5vw; height: 4vh; background-color: transparent;" /> -->
 
           </div>
+          <div class="cover"></div>
+          
         </div>
       </div>
+
     </div>
-    <div style="height: 25%;"></div>
   </div>
   <script>
     var lastScrollTop = 0;
-
     document.getElementById("myDIV").addEventListener("scroll", myFunction);
+
+    // document.getElementById("switcher-tv").addEventListener("click", buildTimeline);
 
     function myFunction() {
       // document.getElementById("demo").innerHTML = "You scrolled in div.";
-      var scrollTop = document.getElementById("content").scrollTop || document.documentElement.scrollTop;
+      var scrollTop = document.getElementById("content2").scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       if (scrollTop > lastScrollTop && scrollTop != document.documentElement.scrollTop) {
         document.getElementById("example1").style.backgroundImage = "url(scrolldown.jpg)";
@@ -103,18 +129,21 @@
       else if (scrollTop < lastScrollTop) {
         document.getElementById("example1").style.backgroundImage = "url(download.jpg)";
       }
-      
+
       lastScrollTop = scrollTop
 
     }
 
-    function scrollDown() {
 
+    function testbutt() {
+      var elem = document.getElementById("testbutt2");
+      if (elem.value == "Close Curtain") elem.value = "Open Curtain";
+      else elem.value = "Close Curtain";
     }
-
-
   </script>
-</body>
 
+
+</body>
+</screen>
 
 </html>
