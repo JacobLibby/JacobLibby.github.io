@@ -1,0 +1,119 @@
+
+@import "bootstrap/scss/functions";
+
+#main {
+    background-image: url(download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#content2 {
+    overflow: auto; /*this gives us our scroll bar when the content is longer than the div*/
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    left: 200px;
+    top: 30px;
+}
+#example1 {
+     background: url(download.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  height: 100vh;
+  scrollbar-color: #fffff0 rgb(0, 0, 0);
+  scrollbar-width: thin;
+
+
+}
+#content_outer {
+    /* width: 100%; */
+
+    /* height: 50%; */
+}
+#content {
+    color:#FFFFF0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: auto;
+    width: 45%;
+    /* margin: auto; */
+margin-left: 28%;
+    height: 47vh;
+    
+}
+#content_inner {  
+    /* margin-top: 80%; */
+    /* margin-bottom: 40%; */
+    
+}
+
+.flex-container {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  /* background-color: rgb(125, 185, 209); */
+  justify-content:center;
+  align-items: center;
+}
+
+.flex-container > div {
+  /* background-color: #000000; */
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  
+}
+
+#flex_id {
+    color:#FFFFF0;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: none;
+    width: 70%;
+    margin: auto;
+    height: 5vh;
+}
+
+
+/* BUTTONS */
+
+
+/* CSS */
+.button-54 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-54:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-54 {
+    padding: 0.25em 0.75em;
+  }
+}
+
+
+.fist-bump {
+    cursor: grabbing;
+}
+
+.high-five {
+    cursor: grab;
+}
