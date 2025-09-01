@@ -27,8 +27,8 @@
                 <div class="flex-container" id="flex_id">
 
                   <!-- <button class="button-54" role="button">Button 54</button> -->
-                  <div><button class="button-54" role="button" id="home" href="#home">HOME</button></div>
-                  <div><button class="button-54" role="button">ABOUT ME</button></div>
+                  <div><button class="button-54" role="button" onclick="document.getElementById('home').scrollIntoView();">HOME</button></div>
+                  <div><button class="button-54" role="button" onclick="document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button></div>
                   <div><button class="button-54" role="button">RESUME</button></div>
                   <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
                   <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
@@ -43,8 +43,8 @@
 
                     <!-- <p id="demo"> -->
                     <!-- </p> -->
-                    <h1>Jacob Libby's Website</h1>
-                    <h2 id="home">WELCOME!</h2>
+                    <h1 id="home">Jacob Libby's Website</h1>
+                    <h2 >WELCOME!</h2>
 
                     <p>My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis,
                       Minnesota.
@@ -63,11 +63,6 @@
                     <br>
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <p>asdf</p>
-                    <a href="#home">linktohome</a>
                     <br>
                     <br>
                     <br>
@@ -177,6 +172,22 @@
       function menuHide() {
         var menu = document.getElementById("menu");
         menu.style.visibility = "hidden"
+      }
+
+
+      function navHome(){
+        document.getElementById("content2").scrollTop = document.documentElement.scrollTop;
+      }
+
+      function navAboutMe(){
+        // Nav to top
+        // navHome();
+
+        // var aboutMe = document.getElementById("aboutMe").scrollTop
+        // var offset = aboutMe.offset().top - $(window).scrollTop();
+
+        document.getElementById("aboutMe").scrollIntoView();
+
       }
 
     </script>
