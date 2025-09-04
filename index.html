@@ -27,16 +27,42 @@
                 <div class="flex-container" id="flex_id">
 
                   <!-- <button class="button-54" role="button">Button 54</button> -->
-                  <div><button class="button-54" role="button" onclick="document.getElementById('home').scrollIntoView();">HOME</button></div>
-                  <div><button class="button-54" role="button" onclick="document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button></div>
-                  <div><button class="button-54" role="button">RESUME</button></div>
+                  <div><button class="button-54" role="button"
+                      onclick="document.getElementById('home').scrollIntoView();">HOME</button></div>
+                  <div><button class="button-54" role="button"
+                      onclick="document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button></div>
+                  <div><button class="button-54" role="button" onclick="resumeShow()">RESUME</button></div>
                   <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
                   <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
                 </div>
+
                 <div id="menu" style="height: 100px;position: absolute; visibility: hidden;">
-                  <img  src="scrolldown3.jpg" style="height: 100px">
+                  <img src="scrolldown3.jpg" style="height: 100px">
                 </div>
-                
+
+
+                <div id="resumeDiv" style="visibility: hidden; background-color: red; justify-content: center;">
+                  <button aria-label="close" onclick="document.getElementById('resumeDiv').style.visibility = 'hidden'"
+                    style="margin-right: 7%; position: relative;">X</button>
+                  <div style="justify-content: center; align-items: center;
+                  height: 80%; width: 90%; top: 55%; left: 50%; transform: translate(-50%, -50%);
+                  position: absolute; background-color: brown;">
+                    <!-- <img src="scrolldown3.jpg" style="height: 100px;"> -->
+                    <!-- <div style="margin: min(5px, 1%);"> -->
+                    <div style="height: 100%;">
+                      <object style="height:100%; width: 100%; " data="/FULL_JacobMLibby_Resume.pdf"
+                        type="application/pdf">
+                        <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf"
+                          style="height:100%; width: 100%;" />
+                      </object>
+                      <!-- </div> -->
+                    </div>
+                    <!-- <object style="height:100%; width: 100%;" data="/FULL_JacobMLibby_Resume.pdf" type="application/pdf">
+                    <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf" />
+                  </object> -->
+
+                  </div>
+                </div>
                 <!-- </div> -->
                 <div id="content2" id="myDiv" onscroll="myFunction()">
                   <div style="height: 46vh">
@@ -44,7 +70,7 @@
                     <!-- <p id="demo"> -->
                     <!-- </p> -->
                     <h1 id="home">Jacob Libby's Website</h1>
-                    <h2 >WELCOME!</h2>
+                    <h2>WELCOME!</h2>
 
                     <p>My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis,
                       Minnesota.
@@ -70,41 +96,22 @@
                     <br>
                     <br>
                     <br>
+                    <!-- <h2 id="resume">RESUME</h2>
+                    <object style="height:100%; width: 100%;" data="/FULL_JacobMLibby_Resume.pdf"
+                      type="application/pdf">
+                      <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf" />
+                    </object> -->
                     <br>
                     <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-
-
-
-
-
                   </div>
                 </div>
               </div>
             </div>
             <div style="align-items: center; margin-left: 17.8vw;">
-              <input class="butt" type="button" onclick="menuHide()"
-                style="margin-left: 0.2vw; " />
-              <input class="butt" type="button" onclick="brightnessDown()"
-                style="margin-left: 3.2vw;" />
-              <input class="butt" type="button" onclick="brightnessUp()"
-                style="margin-left: 5.9vw;" />
-              <input class="butt" type="button" onclick="menuShow()"
-                style="margin-left: 8.9vw;" />
+              <input class="butt" type="button" onclick="menuHide()" style="margin-left: 0.2vw; " />
+              <input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" />
+              <input class="butt" type="button" onclick="brightnessUp()" style="margin-left: 5.9vw;" />
+              <input class="butt" type="button" onclick="menuShow()" style="margin-left: 8.9vw;" />
               <!-- <checkbox id="switcher-tv" class="switchinput"
               style="align-self: center; margin-top: 6vh; margin-left: 9.6vw; width: 2.5vw; height: 4vh; background-color: transparent;" /> -->
 
@@ -175,11 +182,11 @@
       }
 
 
-      function navHome(){
+      function navHome() {
         document.getElementById("content2").scrollTop = document.documentElement.scrollTop;
       }
 
-      function navAboutMe(){
+      function navAboutMe() {
         // Nav to top
         // navHome();
 
@@ -190,6 +197,11 @@
 
       }
 
+      function resumeShow() {
+        var resumeDiv = document.getElementById("resumeDiv");
+        resumeDiv.style.visibility = "visible"
+
+      }
     </script>
 
 

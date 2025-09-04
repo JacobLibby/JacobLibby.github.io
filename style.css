@@ -53,15 +53,15 @@
   flex-wrap:wrap;
   /* background-color: rgb(125, 185, 209); */
   justify-content:center;
-  align-items: center;
+  align-items:baseline;
   max-width: 48vw;
 }
 
 .flex-container > div {
   /* background-color: #000000; */
   margin-top: 0px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 7.5px;
+  margin-right: 7.5px;
   margin-bottom: 0px;
   text-align: center;
   font-size: 30px;
@@ -72,7 +72,7 @@
     color:#FFFFF0;
     font-family: 'Courier New', Courier, monospace;
     overflow: none;
-    width: 70%;
+    width: 98%;
     margin: auto;
     height: 5vh;
 }
@@ -476,3 +476,9 @@ input:checked ~ .cover:before {
 		background: #111111;
 	}
 	 */
+
+
+	 
+.embed:focus {
+  outline: none;
+}
