@@ -191,27 +191,39 @@
 	cursor: pointer;
 	width: 2vw;
 	height: 4.6vh;
-	/* background-color: red; */
+	background-color: red;
 	opacity: 0;
 	border-width: 0;
 }
 
 #btn_exit{
 	height: 8vh;
-	cursor: pointer;
-}
-#btn_minplu{
+	
+	/* width: min(10vw,75px); */
 	height: 8vh;
+}
+
+#minplu_div {
+	/* width: min(23vw, 168px); */
+	height: auto;
+
+}
+
+#btn_minplu{
+		/* width: min(23vw, 168px); */
+	height: 7.4vh;
 
 }
 #btn_menu{
 	height: 8vh;
-	cursor: pointer;
+	
 }
 #btn_pwrind{
-	height: 1vh;
+	height: 1.4vh;
 	position: absolute;
-	bottom: -20vh;
+	bottom: -9.4vh;
+	right: -3vw;
+	z-index: 10;
 }
 #btn_pwr{
 	height: 8vh;

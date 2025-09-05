@@ -115,26 +115,36 @@
                   </div>
                 </div>
               </div>
-<div>
-<div style="margin-top: 5vh;">
-              <div class="flex-container2" id="flex_id2">
-                <div ><img id="btn_exit" src="btn_exit.png" class="botbutt" onclick="menuHide()"></div>
-                <div style="margin-top:1.5vh; position: relative;">
-                  <img id="btn_minplu" src="btn_minplu.png" style="margin-top: 1.2vh; height: auto; width: 168px;" class="botbutt" onclick="brightnessDown()">
-                  <input class="butt" type="button" onclick="brightnessDown()" style="bottom: 5px; left: 0px; width: 50%; height: 7vh;" />
-                  <input class="butt" type="button" onclick="brightnessUp()" style="bottom: 5px; left: 12px; width: 50%; height: 7vh; margin-left: 5.9vw;" />
-                </div>
-                <div ><img id="btn_menu" src="btn_menu.png" class="botbutt" onclick="menuShow()"></div>
-                <!-- <div><input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" /></div>
+              <div>
+                <div style="margin-top: 5vh;">
+                  <div class="flex-container2" id="flex_id2">
+                    <div style=" position: relative;"><img id="btn_exit" src="btn_exit.png" class="botbutt">
+                      <input class="butt" type="button" onclick="menuHide()"
+                        style="bottom: 42px; left: 4px; width: 88%; height: 3vh;" />
+                    </div>
+                    <div id="minplu_div" style="margin-top:1.5vh; position: relative;">
+                      <img id="btn_minplu" src="btn_minplu.png" style="margin-top: 1.2vh;" class="botbutt"
+                        onclick="brightnessDown()">
+                      <input class="butt" type="button" onclick="brightnessDown()"
+                        style="bottom: 49px; left: 0px; width: 50%; height: 3.5vh;" />
+                      <input class="butt" type="button" onclick="brightnessUp()"
+                        style="bottom: 49px; right: 0px; width: 50%; height: 3.5vh; " />
+                    </div>
+                    <div style=" position: relative;"><img id="btn_menu" src="btn_menu.png" class="botbutt">
+                      <input class="butt" type="button" onclick="menuShow()"
+                        style="bottom: 42px; left: 4px; width: 88%; height: 3vh;" />
+                    </div>
+                    <!-- <div><input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" /></div>
                 <div><input class="butt" type="button" onclick="brightnessUp()" style="margin-left: 5.9vw;" /></div>
                 <div><input class="butt" type="button" onclick="menuShow()" style="margin-left: 8.9vw;" /></div> -->
-              
-                  
+
+
+                  </div>
+                  <!-- <div><img id="btn_pwrind" src="btn_pwrind.png"></div> -->
+                  <div><img id="btn_pwr" src="btn_pwr.png" class="botbutt" style="height: 9vh;" onclick="testbutt()">
+                  </div>
+                </div>
               </div>
-              <div style=""><img id="btn_pwrind" src="btn_pwrind.png"></div>
-                  <div><img id="btn_pwr" src="btn_pwr.png" class="botbutt" style="height: 9vh;" onclick="testbutt()"></div>
-</div>
-</div>
               <!-- <input class="butt" type="button" onclick="menuHide()" style="margin-left: 0.2vw; " /> -->
 
               <!-- <div style="align-items: center; margin-left: 17.8vw;">
@@ -146,89 +156,89 @@
               </div> -->
               <div class="cover"></div>
 
+            </div>
           </div>
         </div>
-    </div>
-    <script>
-      var lastScrollTop = 0;
+        <script>
+          var lastScrollTop = 0;
 
-      document.getElementById("myDIV").addEventListener("scroll", myFunction);
+          document.getElementById("myDIV").addEventListener("scroll", myFunction);
 
-      // document.getElementById("switcher-tv").addEventListener("click", buildTimeline);
+          // document.getElementById("switcher-tv").addEventListener("click", buildTimeline);
 
-      function myFunction() {
-        // document.getElementById("demo").innerHTML = "You scrolled in div.";
-        var scrollTop = document.getElementById("content2").scrollTop || document.documentElement.scrollTop;
-        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-        if (scrollTop > lastScrollTop && scrollTop != document.documentElement.scrollTop) {
-          document.getElementById("example1").style.backgroundImage = "url(scrolldown.jpg)";
-        }
-        else if (scrollTop < lastScrollTop) {
-          document.getElementById("example1").style.backgroundImage = "url(download.jpg)";
-        }
+          function myFunction() {
+            // document.getElementById("demo").innerHTML = "You scrolled in div.";
+            var scrollTop = document.getElementById("content2").scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            if (scrollTop > lastScrollTop && scrollTop != document.documentElement.scrollTop) {
+              document.getElementById("example1").style.backgroundImage = "url(scrolldown.jpg)";
+            }
+            else if (scrollTop < lastScrollTop) {
+              document.getElementById("example1").style.backgroundImage = "url(download.jpg)";
+            }
 
-        lastScrollTop = scrollTop
+            lastScrollTop = scrollTop
 
-      }
-
-
-      function testbutt() {
-        var elem = document.getElementById("testbutt2");
-        if (elem.value == "Close Curtain") elem.value = "Open Curtain";
-        else elem.value = "Close Curtain";
-      }
-
-      function brightnessUp() {
-        var screen = document.getElementById("content_outer");
-        if (screen.style.opacity < 1) {
-          screen.style.opacity = screen.style.opacity * 1.3;
-        }
-        if (screen.style.opacity >= 1) {
-          screen.style.opacity = 1;
-        }
-      }
-      function brightnessDown() {
-        var screen = document.getElementById("content_outer");
-        if (screen.style.opacity > .2) {
-          screen.style.opacity = screen.style.opacity / 1.3;
-        }
-        if (screen.style.opacity <= .2) {
-          screen.style.opacity = 0.2;
-        }
-      }
-
-      function menuShow() {
-        var menu = document.getElementById("menu");
-        menu.style.visibility = "visible"
-      }
-
-      function menuHide() {
-        var menu = document.getElementById("menu");
-        menu.style.visibility = "hidden"
-      }
+          }
 
 
-      function navHome() {
-        document.getElementById("content2").scrollTop = document.documentElement.scrollTop;
-      }
+          function testbutt() {
+            var elem = document.getElementById("testbutt2");
+            if (elem.value == "Close Curtain") elem.value = "Open Curtain";
+            else elem.value = "Close Curtain";
+          }
 
-      function navAboutMe() {
-        // Nav to top
-        // navHome();
+          function brightnessUp() {
+            var screen = document.getElementById("content_outer");
+            if (screen.style.opacity < 1) {
+              screen.style.opacity = screen.style.opacity * 1.3;
+            }
+            if (screen.style.opacity >= 1) {
+              screen.style.opacity = 1;
+            }
+          }
+          function brightnessDown() {
+            var screen = document.getElementById("content_outer");
+            if (screen.style.opacity > .2) {
+              screen.style.opacity = screen.style.opacity / 1.3;
+            }
+            if (screen.style.opacity <= .2) {
+              screen.style.opacity = 0.2;
+            }
+          }
 
-        // var aboutMe = document.getElementById("aboutMe").scrollTop
-        // var offset = aboutMe.offset().top - $(window).scrollTop();
+          function menuShow() {
+            var menu = document.getElementById("menu");
+            menu.style.visibility = "visible"
+          }
 
-        document.getElementById("aboutMe").scrollIntoView();
+          function menuHide() {
+            var menu = document.getElementById("menu");
+            menu.style.visibility = "hidden"
+          }
 
-      }
 
-      function resumeShow() {
-        var resumeDiv = document.getElementById("resumeDiv");
-        resumeDiv.style.visibility = "visible"
+          function navHome() {
+            document.getElementById("content2").scrollTop = document.documentElement.scrollTop;
+          }
 
-      }
-    </script>
+          function navAboutMe() {
+            // Nav to top
+            // navHome();
+
+            // var aboutMe = document.getElementById("aboutMe").scrollTop
+            // var offset = aboutMe.offset().top - $(window).scrollTop();
+
+            document.getElementById("aboutMe").scrollIntoView();
+
+          }
+
+          function resumeShow() {
+            var resumeDiv = document.getElementById("resumeDiv");
+            resumeDiv.style.visibility = "visible"
+
+          }
+        </script>
 
 
 </body>
