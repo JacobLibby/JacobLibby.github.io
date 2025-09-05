@@ -11,117 +11,143 @@
 </head>
 <script src="index.js"></script>
 
-<body style="height: 100%; overflow: hidden; margin: 0px;" id="content">
-  <div id="example1">
-    <div style="height: 8.2%;"></div>
+<body id="content">
+
+  <div>
+    <!-- <div id="keyboard"> -->
     <div>
+
+      <!-- <img id="keyboard" src="download_big_keyboard.png"> -->
+      <img id="monitor" src="monitor_nb.png">
+      <div style="height: 8.2%;"></div>
       <div>
-        <div class="tv">
-          <div>
-            <input type="checkbox" class="switchinput" checked>
-            <!-- <div class="switch"></div> -->
-            <div class="video">
-              <!-- <div id="content_outer"> -->
-              <div id="content_outer" style="opacity: 1;">
+        <div>
+          <div class="tv">
+            <div>
+              <input type="checkbox" class="switchinput" checked style="background-color: blue;">
+              <!-- <div class="switch"></div> -->
+              <div class="video">
+                <!-- <div id="content_outer"> -->
+                <div id="content_outer" style="opacity: 1;">
 
-                <div class="flex-container" id="flex_id">
+                  <div class="flex-container" id="flex_id">
 
-                  <!-- <button class="button-54" role="button">Button 54</button> -->
-                  <div><button class="button-54" role="button"
-                      onclick="document.getElementById('home').scrollIntoView();">HOME</button></div>
-                  <div><button class="button-54" role="button"
-                      onclick="document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button></div>
-                  <div><button class="button-54" role="button" onclick="resumeShow()">RESUME</button></div>
-                  <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
-                  <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
-                </div>
+                    <!-- <button class="button-54" role="button">Button 54</button> -->
+                    <div><button class="button-54" role="button"
+                        onclick="document.getElementById('home').scrollIntoView();">HOME</button></div>
+                    <div><button class="button-54" role="button"
+                        onclick="document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button></div>
+                    <div><button class="button-54" role="button" onclick="resumeShow()">RESUME</button></div>
+                    <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
+                    <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
+                  </div>
 
-                <div id="menu" style="height: 100px;position: absolute; visibility: hidden;">
-                  <img src="scrolldown3.jpg" style="height: 100px">
-                </div>
+                  <div id="menu" style="height: 100px;position: absolute; visibility: hidden;">
+                    <img src="scrolldown3.jpg" style="height: 100px">
+                  </div>
 
 
-                <div id="resumeDiv" style="visibility: hidden; background-color: red; justify-content: center;">
-                  <button aria-label="close" onclick="document.getElementById('resumeDiv').style.visibility = 'hidden'"
-                    style="margin-right: 7%; position: relative;">X</button>
-                  <div style="justify-content: center; align-items: center;
+                  <div id="resumeDiv" style="visibility: hidden; background-color: red; justify-content: center;">
+                    <button aria-label="close"
+                      onclick="document.getElementById('resumeDiv').style.visibility = 'hidden'"
+                      style="margin-right: 7%; position: relative;">X</button>
+                    <div style="justify-content: center; align-items: center;
                   height: 80%; width: 90%; top: 55%; left: 50%; transform: translate(-50%, -50%);
                   position: absolute; background-color: brown;">
-                    <!-- <img src="scrolldown3.jpg" style="height: 100px;"> -->
-                    <!-- <div style="margin: min(5px, 1%);"> -->
-                    <div style="height: 100%;">
-                      <object style="height:100%; width: 100%; " data="/FULL_JacobMLibby_Resume.pdf"
-                        type="application/pdf">
-                        <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf"
-                          style="height:100%; width: 100%;" />
-                      </object>
-                      <!-- </div> -->
-                    </div>
-                    <!-- <object style="height:100%; width: 100%;" data="/FULL_JacobMLibby_Resume.pdf" type="application/pdf">
+                      <!-- <img src="scrolldown3.jpg" style="height: 100px;"> -->
+                      <!-- <div style="margin: min(5px, 1%);"> -->
+                      <div style="height: 100%;">
+                        <object style="height:100%; width: 100%; " data="/FULL_JacobMLibby_Resume.pdf"
+                          type="application/pdf">
+                          <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf"
+                            style="height:100%; width: 100%;" />
+                        </object>
+                        <!-- </div> -->
+                      </div>
+                      <!-- <object style="height:100%; width: 100%;" data="/FULL_JacobMLibby_Resume.pdf" type="application/pdf">
                     <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf" />
                   </object> -->
 
+                    </div>
                   </div>
-                </div>
-                <!-- </div> -->
-                <div id="content2" id="myDiv" onscroll="myFunction()">
-                  <div style="height: 46vh">
+                  <!-- </div> -->
+                  <div id="content2" id="myDiv" onscroll="myFunction()">
+                    <div style="height: 46vh">
 
-                    <!-- <p id="demo"> -->
-                    <!-- </p> -->
-                    <h1 id="home">Jacob Libby's Website</h1>
-                    <h2>WELCOME!</h2>
+                      <!-- <p id="demo"> -->
+                      <!-- </p> -->
+                      <h1 id="home">Jacob Libby's Website</h1>
+                      <h2>WELCOME!</h2>
 
-                    <p>My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis,
-                      Minnesota.
-                      I felt that the standard website is a bit too boring and modern these days, so here's my take on a
-                      website
-                      that's more efficient and fun to interact with.</p>
+                      <p>My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis,
+                        Minnesota.
+                        I felt that the standard website is a bit too boring and modern these days, so here's my take on
+                        a
+                        website
+                        that's more efficient and fun to interact with.</p>
 
 
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <h2 id="aboutMe">ABOUT ME</h2>
-                    <p>Here is a whole paragraph talking about me</p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <!-- <h2 id="resume">RESUME</h2>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <h2 id="aboutMe">ABOUT ME</h2>
+                      <p>Here is a whole paragraph talking about me</p>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <!-- <h2 id="resume">RESUME</h2>
                     <object style="height:100%; width: 100%;" data="/FULL_JacobMLibby_Resume.pdf"
                       type="application/pdf">
                       <embed src="/FULL_JacobMLibby_Resume.pdf" type="application/pdf" />
                     </object> -->
-                    <br>
-                    <br>
+                      <br>
+                      <br>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div style="align-items: center; margin-left: 17.8vw;">
-              <input class="butt" type="button" onclick="menuHide()" style="margin-left: 0.2vw; " />
-              <input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" />
-              <input class="butt" type="button" onclick="brightnessUp()" style="margin-left: 5.9vw;" />
-              <input class="butt" type="button" onclick="menuShow()" style="margin-left: 8.9vw;" />
-              <!-- <checkbox id="switcher-tv" class="switchinput"
-              style="align-self: center; margin-top: 6vh; margin-left: 9.6vw; width: 2.5vw; height: 4vh; background-color: transparent;" /> -->
+<div>
+<div style="margin-top: 5vh;">
+              <div class="flex-container2" id="flex_id2">
+                <div ><img id="btn_exit" src="btn_exit.png" class="botbutt" onclick="menuHide()"></div>
+                <div style="margin-top:1.5vh; position: relative;">
+                  <img id="btn_minplu" src="btn_minplu.png" style="margin-top: 1.2vh; height: auto; width: 168px;" class="botbutt" onclick="brightnessDown()">
+                  <input class="butt" type="button" onclick="brightnessDown()" style="bottom: 5px; left: 0px; width: 50%; height: 7vh;" />
+                  <input class="butt" type="button" onclick="brightnessUp()" style="bottom: 5px; left: 12px; width: 50%; height: 7vh; margin-left: 5.9vw;" />
+                </div>
+                <div ><img id="btn_menu" src="btn_menu.png" class="botbutt" onclick="menuShow()"></div>
+                <!-- <div><input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" /></div>
+                <div><input class="butt" type="button" onclick="brightnessUp()" style="margin-left: 5.9vw;" /></div>
+                <div><input class="butt" type="button" onclick="menuShow()" style="margin-left: 8.9vw;" /></div> -->
+              
+                  
+              </div>
+              <div style=""><img id="btn_pwrind" src="btn_pwrind.png"></div>
+                  <div><img id="btn_pwr" src="btn_pwr.png" class="botbutt" style="height: 9vh;" onclick="testbutt()"></div>
+</div>
+</div>
+              <!-- <input class="butt" type="button" onclick="menuHide()" style="margin-left: 0.2vw; " /> -->
 
-            </div>
-            <div class="cover"></div>
+              <!-- <div style="align-items: center; margin-left: 17.8vw;">
+                <input class="butt" type="button" onclick="menuHide()" style="margin-left: 0.2vw; " />
+                <input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" />
+                <input class="butt" type="button" onclick="brightnessUp()" style="margin-left: 5.9vw;" />
+                <input class="butt" type="button" onclick="menuShow()" style="margin-left: 8.9vw;" />
+                
+              </div> -->
+              <div class="cover"></div>
 
           </div>
         </div>
-
-      </div>
     </div>
     <script>
       var lastScrollTop = 0;
