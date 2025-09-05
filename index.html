@@ -24,33 +24,52 @@
         <div>
           <div class="tv">
             <div>
+              <div class="flex-container" id="flex_id">
+
+                    <!-- <button class="button-54" role="button">Button 54</button> -->
+                    <div>
+                       <!-- <button class="button-54" role="button"
+                        onclick="navHome()">HOME</button> -->
+                      <button class="button-54" role="button"
+                        onclick="checkResume();document.getElementById('home').scrollIntoView();">HOME</button>
+                    </div>
+                    <div>
+                      <!-- <button class="button-54" role="button"
+                        onclick="navAboutMe()">ABOUT ME</button> -->
+                      <button class="button-54" role="button"
+                        onclick="checkResume();document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button>
+                        
+                    </div>
+                    <div>
+                      <button id="btn_resume" class="button-54" role="button" onclick="resumeShow()">RESUME</button>
+                    </div>
+                    <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
+                    <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
+                  </div>
               <input type="checkbox" class="switchinput" checked style="background-color: blue;">
               <!-- <div class="switch"></div> -->
               <div class="video">
                 <!-- <div id="content_outer"> -->
+
                 <div id="content_outer" style="opacity: 1;">
-
-                  <div class="flex-container" id="flex_id">
-
-                    <!-- <button class="button-54" role="button">Button 54</button> -->
-                    <div><button class="button-54" role="button"
-                        onclick="document.getElementById('home').scrollIntoView();">HOME</button></div>
-                    <div><button class="button-54" role="button"
-                        onclick="document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button></div>
-                    <div><button class="button-54" role="button" onclick="resumeShow()">RESUME</button></div>
-                    <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
-                    <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
+                  <div id="resumeCurtain" onclick="resumeShow()"
+                    style="visibility: hidden; background-color: blue; opacity: .8; height: 100vh; width: 100vw; position: absolute; left: 0vw; ">
                   </div>
+                  
 
                   <div id="menu" style="height: 100px;position: absolute; visibility: hidden;">
                     <img src="scrolldown3.jpg" style="height: 100px">
                   </div>
 
 
-                  <div id="resumeDiv" style="visibility: hidden; background-color: red; justify-content: center;">
-                    <button aria-label="close"
-                      onclick="document.getElementById('resumeDiv').style.visibility = 'hidden'"
-                      style="margin-right: 7%; position: relative;">X</button>
+                  <div id="resumeDiv"
+                    style="visibility: visible; background-color: red; justify-self: center; visibility: hidden;">
+                    <!-- <div style="justify-self: end;">
+                      <button aria-label="close"
+                        onclick="document.getElementById('resumeDiv').style.visibility = 'hidden'"
+                        style="position: relative; top: 2vh; transform: translate(50%, 50%); font: 2em sans-serif; z-index: 10;">X</button>
+                    </div> -->
+
                     <div style="justify-content: center; align-items: center;
                   height: 80%; width: 90%; top: 55%; left: 50%; transform: translate(-50%, -50%);
                   position: absolute; background-color: brown;">
@@ -87,6 +106,20 @@
                         that's more efficient and fun to interact with.</p>
 
 
+                      <br>          <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>          <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
                       <br>
                       <br>
                       <br>
@@ -96,7 +129,23 @@
                       <br>
                       <br>
                       <br>
+                      <br>          <br>
                       <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+                      <br>
+
+                                <br>
                       <br>
                       <br>
                       <br>
@@ -208,34 +257,73 @@
           }
 
           function menuShow() {
+            checkResume();
             var menu = document.getElementById("menu");
             menu.style.visibility = "visible"
           }
 
           function menuHide() {
+            checkResume();
             var menu = document.getElementById("menu");
             menu.style.visibility = "hidden"
           }
 
 
           function navHome() {
+            checkResume();
             document.getElementById("content2").scrollTop = document.documentElement.scrollTop;
           }
 
           function navAboutMe() {
+            // checkResume();
             // Nav to top
             // navHome();
 
-            // var aboutMe = document.getElementById("aboutMe").scrollTop
+            var aboutMe = document.getElementById("aboutMe").scrollTop
             // var offset = aboutMe.offset().top - $(window).scrollTop();
 
-            document.getElementById("aboutMe").scrollIntoView();
+            // var currScroll = document.getElementById("content2").scrollTop || document.documentElement.scrollTop;
+            // console.log(currScroll);
+            // document.getElementById("content2").scrollTop += 100;
+
+            // document.getElementById("content2").scroll(0, aboutMe. +300);
+
+            // document.getElementById("aboutMe").scrollIntoView();
 
           }
 
           function resumeShow() {
             var resumeDiv = document.getElementById("resumeDiv");
-            resumeDiv.style.visibility = "visible"
+            var resumeCurtain = document.getElementById("resumeCurtain");
+            var resumeButton = document.getElementById("btn_resume");
+            if (resumeDiv.style.visibility == "visible") {
+              resumeDiv.style.visibility = "hidden"
+              resumeCurtain.style.visibility = "hidden"
+
+              resumeButton.style.boxShadow = "1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px";
+              resumeButton.style.top = "0px";
+              resumeButton.style.left = "0px";
+              resumeButton.style.backgroundColor = "#FFFFFF";
+
+            } else {
+              var menu = document.getElementById("menu");
+              menu.style.visibility = "hidden"
+              resumeDiv.style.visibility = "visible"
+              resumeCurtain.style.visibility = "visible"
+
+              resumeButton.style.boxShadow = "0px 0px 0px 0px";
+              resumeButton.style.top = "5px";
+              resumeButton.style.left = "5px";
+              resumeButton.style.backgroundColor = "#BBBBBB";
+            }
+          }
+          function checkResume() {
+            var resumeDiv = document.getElementById("resumeDiv");
+            var resumeCurtain = document.getElementById("resumeCurtain");
+            var resumeButton = document.getElementById("btn_resume");
+            if (resumeDiv.style.visibility == "visible") {
+              resumeShow();
+            }
 
           }
         </script>
