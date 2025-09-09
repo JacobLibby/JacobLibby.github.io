@@ -53,7 +53,7 @@
 
                 <div id="content_outer" style="opacity: 1;">
                   <div id="resumeCurtain" onclick="resumeShow()"
-                    style="visibility: hidden; background-color: blue; opacity: .8; height: 100vh; width: 100vw; position: absolute; left: 0vw; ">
+                    style="visibility: hidden; background-color: black; opacity: 0; height: 100vh; width: 100vw; position: absolute; left: 0vw; ">
                   </div>
 
 
@@ -62,17 +62,23 @@
                   </div>
 
 
+
                   <div id="resumeDiv"
-                    style="visibility: visible; background-color: red; justify-self: center; visibility: hidden;">
+                    style="visibility: hidden; background-color: red; justify-self: center;">
                     <!-- <div style="justify-self: end;">
                       <button aria-label="close"
                         onclick="document.getElementById('resumeDiv').style.visibility = 'hidden'"
                         style="position: relative; top: 2vh; transform: translate(50%, 50%); font: 2em sans-serif; z-index: 10;">X</button>
                     </div> -->
 
-                    <div style="justify-content: center; align-items: center;
+                    <!-- <div style="justify-content: center; align-items: center;
                   height: 80%; width: 90%; top: 55%; left: 50%; transform: translate(-50%, -50%);
+                  position: absolute; background-color: brown;"> -->
+
+                    <div style="justify-content: center; align-items: center;
+                  height: 70vh; width: 80vw; top: 55%; left: 50%; transform: translate(-50%, -50%);
                   position: absolute; background-color: brown;">
+
                       <!-- <img src="scrolldown3.jpg" style="height: 100px;"> -->
                       <!-- <div style="margin: min(5px, 1%);"> -->
                       <div style="height: 100%;">
@@ -298,6 +304,7 @@
             var resumeDiv = document.getElementById("resumeDiv");
             var resumeCurtain = document.getElementById("resumeCurtain");
             var resumeButton = document.getElementById("btn_resume");
+
             if (resumeDiv.style.visibility == "visible") {
               resumeDiv.style.visibility = "hidden"
               resumeCurtain.style.visibility = "hidden"
@@ -306,6 +313,9 @@
               resumeButton.style.top = "0px";
               resumeButton.style.left = "0px";
               resumeButton.style.backgroundColor = "#FFFFFF";
+
+
+
 
             } else {
               var menu = document.getElementById("menu");
@@ -317,6 +327,8 @@
               resumeButton.style.top = "5px";
               resumeButton.style.left = "5px";
               resumeButton.style.backgroundColor = "#BBBBBB";
+
+
             }
           }
           function checkResume() {
