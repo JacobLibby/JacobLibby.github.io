@@ -24,46 +24,58 @@
         <div>
           <div class="tv">
             <div>
-              <div class="flex-container" id="flex_id">
 
-                <!-- <button class="button-54" role="button">Button 54</button> -->
-                <div>
-                  <!-- <button class="button-54" role="button"
-                        onclick="navHome()">HOME</button> -->
-                  <button class="button-54" role="button"
-                    onclick="checkResume();document.getElementById('home').scrollIntoView();"
-                    style="text-align: center">HOME</button>
-                </div>
-                <div>
-                  <!-- <button class="button-54" role="button"
-                        onclick="navAboutMe()">ABOUT ME</button> -->
-                  <button class="button-54" role="button"
-                    onclick="checkResume();document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button>
-
-                </div>
-                <!-- <div>
-                  <button id="btn_resume" class="button-54" role="button" onclick="resumeShow()">RESUME</button>
-                </div> -->
-                <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
-                <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
-                <div><button class="button-54" role="button"
-                    onclick=" window.open('https://github.com/JacobLibby','_blank')">GITHUB</button></div>
-                <div><button class="button-54" role="button"
-                    onclick=" window.open('https://www.linkedin.com/in/jacob-libby-416b99149/','_blank')">LINKEDIN</button>
-                </div>
-              </div>
               <input type="checkbox" class="switchinput" checked style="background-color: blue;">
               <!-- <div class="switch"></div> -->
               <div class="video">
                 <!-- <div id="content_outer"> -->
 
                 <div id="content_outer" style="opacity: 1;">
+
+                  <div class="flex-container" id="flex_id">
+
+                    <!-- <button class="button-54" role="button">Button 54</button> -->
+                    <div>
+                      <!-- <button class="button-54" role="button"
+                        onclick="navHome()">HOME</button> -->
+                      <button class="button-54" role="button"
+                        onclick="checkResume();document.getElementById('home').scrollIntoView();"
+                        style="text-align: center">HOME</button>
+                    </div>
+                    <div>
+                      <!-- <button class="button-54" role="button"
+                        onclick="navAboutMe()">ABOUT ME</button> -->
+                      <button class="button-54" role="button"
+                        onclick="checkResume();document.getElementById('aboutMe').scrollIntoView();">ABOUT ME</button>
+
+                    </div>
+                    <!-- <div>
+                  <button id="btn_resume" class="button-54" role="button" onclick="resumeShow()">RESUME</button>
+                </div> -->
+                    <div><button class="button-54 high-five" role="button">HIGH FIVE</button></div>
+                    <div><button class="button-54 fist-bump" role="button">FIST BUMP</button></div>
+                    <div><button class="button-54" role="button"
+                        onclick=" window.open('https://github.com/JacobLibby','_blank')">GITHUB</button></div>
+                    <div><button class="button-54" role="button"
+                        onclick=" window.open('https://www.linkedin.com/in/jacob-libby-416b99149/','_blank')">LINKEDIN</button>
+                    </div>
+                  </div>
                   <div id="resumeCurtain" onclick="resumeShow()"
                     style="visibility: hidden; background-color: black; opacity: 0; height: 100vh; width: 100vw; position: absolute; left: 0vw; ">
                   </div>
 
 
-                  <div id="menu" style="height: 100px;position: absolute; visibility: hidden;">
+                  <div id="menu" style="height: 100px; width:85%; top:25%; left:50%; transform:translate(-50%, -25%); text-align: center;margin: 0 auto; position: absolute; visibility: hidden;">
+                    <div id="content_menu"  onscroll="myFunction()">
+                      <div style="height: 45vh;width:100%;object-fit:cover;background-image:url('monitor_nb_screen.png'); overflow:scroll;overflow-y:auto;overflow-x:auto" id="home">
+                        <!-- <p id="demo"> </p> -->
+                        <h1>TEST MENU</h1>
+                        <h2>testing menu</h2>
+                        <p>
+                          yeah, we're testing a menu here</p>
+                      </div>
+                    </div>
+
                     <img src="scrolldown3.jpg" style="height: 100px">
                   </div>
 
@@ -104,11 +116,12 @@
                   <div id="content2" id="myDiv" onscroll="myFunction()">
                     <div style="height: 52vh" id="home">
                       <!-- <p id="demo"> </p> -->
-                      <h1 >Jacob Libby's Website</h1>
+                      <h1>Jacob Libby's Website</h1>
                       <h2>WELCOME!</h2>
                       <p>
-                        My name is Jacob and I am a 26 year old programmer/book-hoarder/guy based out of Minneapolis, Minnesota.
-                        I felt that the standard website is a bit too boring and modern these days, 
+                        My name is Jacob (he/him/his) and I am a 26 year old programmer/book-hoarder/guy based out of
+                        Damariscotta, Maine.
+                        I felt that the standard website is a bit too boring and modern these days,
                         so here's my take on a website that's more efficient and fun to interact with.</p>
                       <p>
                         If you see anything or any image that looks weird, that's a feature I swear.</p>
@@ -116,24 +129,32 @@
                       <br>
                       <h2 id="aboutMe">ABOUT ME</h2>
                       <p>
-                        Here is a whole paragraph talking about Jacob (me). Feel free to navigate to my Github and LinkedIn up at the top of the page.</p>
+                        Here is a whole paragraph talking about Jacob (me). Feel free to navigate to my Github and
+                        LinkedIn up at the top of the page.</p>
 
                       <p>
-                        I grew up in Portland, Maine for the first 18 years of my life with my older brother Noah and my mom. 
-                        I started wearing glasses when I was around 3-5 years old and haven't been able to kick the habit since. 
-                        Computers, Math, and books are three of my favorite topics to learn about, talk about, and share about.</p>
+                        I grew up in Portland, Maine for the first 18 years of my life with my older brother Noah and my
+                        mom.
+                        I started wearing glasses when I was around 3-5 years old and haven't been able to kick the
+                        habit since.
+                        Computers, Math, and books are three of my favorite topics to learn about, talk about, and share
+                        about.</p>
                       <p>
-                        I'll work on adding a photo of me {right here}, but the main problem I am facing is finding photos of me 
-                        that I can add to a website while fitting the vibe. In the meantime, picture a tall person with glasses and you're halfway there.</p>
+                        I'll work on adding a photo of me {right here}, but the main problem I am facing is finding
+                        photos of me
+                        that I can add to a website while fitting the vibe. In the meantime, picture a tall person with
+                        glasses and you're halfway there.</p>
                       <br>
                       <p>
                         Thank you for taking the time to meet me.
                         <br><br>
-                        Treat yourself to a high five or fist bump. 
-                        On the house.</p>
-                        <br>
+                        Treat yourself to a high five or fist bump.
+                        On the house.
+                      </p>
+                      <br>
                       <p>
-                        If you have anything else you want to know about me or ideas of what I can add to this website, email me at jacobmlibby{at}gmail{.com} (eat it, bots)</p>
+                        If you have anything else you want to know about me or ideas of what I can add to this website,
+                        email me at jacobmlibby{at}gmail{.com} (eat it, bots)</p>
                       <br>
 
                       <!-- <h2 id="resume">RESUME</h2>
@@ -152,20 +173,20 @@
                   <div class="flex-container2" id="flex_id2">
                     <div style=" position: relative;"><img id="btn_exit" src="btn_exit.png" class="botbutt">
                       <input class="butt" type="button" onclick="menuHide()"
-                        style="bottom: 41px; left: 4px; width: 88%; height: 3vh;" />
+                        style="bottom: 25px; left: 4px; width: 88%; height: 3vh;" />
                     </div>
 
                     <div id="minplu_div" style="margin-top:1.5vh; position: relative;">
                       <img id="btn_minplu" src="btn_minplu.png" style="margin-top: 1.2vh;" class="botbutt">
                       <input class="butt" type="button" onclick="brightnessDown()"
-                        style="bottom: 48px; left: 0px; width: 50%; height: 3.5vh;" />
+                        style="bottom: 25px; left: 0px; width: 50%; height: 3.5vh;" />
                       <input class="butt" type="button" onclick="brightnessUp()"
-                        style="bottom: 48px; right: 0px; width: 50%; height: 3.5vh; " />
+                        style="bottom: 25px; right: 0px; width: 50%; height: 3.5vh; " />
                     </div>
 
                     <div style=" position: relative;"><img id="btn_menu" src="btn_menu.png" class="botbutt">
                       <input class="butt" type="button" onclick="menuShow()"
-                        style="bottom: 41px; left: 2px; width: 88%; height: 3vh;" />
+                        style="bottom: 25px; left: 2px; width: 88%; height: 3vh;" />
                     </div>
                     <!-- <div><input class="butt" type="button" onclick="brightnessDown()" style="margin-left: 3.2vw;" /></div>
                 <div><input class="butt" type="button" onclick="brightnessUp()" style="margin-left: 5.9vw;" /></div>

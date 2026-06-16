@@ -73,6 +73,22 @@
 	height: 63.6vh;
 
 }
+#content_menu {
+	color: #FFFFF0;
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: 100;
+	font-size: x-large;
+	text-align: center;
+	justify-content: center;
+	overflow: auto;
+	/* width: 45%; */
+	/* margin: auto; */
+	margin-left: 0.9%;
+	/* margin-left: 28%; */
+	height: 63.6vh;
+
+}
+
 
 #content_inner {
 	/* margin-top: 80%; */
